@@ -1,8 +1,6 @@
-<html>
- <head>
-  <title>Teste PHP</title>
- </head>
- <body>
- <?php echo "<p>Olá Mundo</p>"; ?>
- </body>
-</html>
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.1-node-browsers 
+    working_directory: ~/laravel 
